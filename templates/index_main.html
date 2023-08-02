@@ -1,0 +1,82 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <meta name="viewpoint" content="with=device-width, initial-scale=1.0">       <!-- used to make the page dynamic-->
+        <title>Learn ASL</title>
+        <link rel="icon" href="{{url_for('static',filename='ASL_logo.png')}}" type="image/x-icon">
+        <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <div class="nav-links">
+                    <!-- making a list of headers-->
+                    
+                    <ul>
+                        <li class="except" style="vertical-align: middle;"><img src="{{ url_for('static', filename='ASL_logo.png') }}" style="vertical-align: middle;" height="70x" width="70px" ></li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#container">Services</a></li>
+                        <!-- <li class="login-btn"><a href="">Login</a></li> -->
+                    </ul>
+                    <!-- <button class="login-btn">Login</button> -->
+                </div>
+            </nav>
+      </header>
+<div class="home">
+      <h1>Want to Learn ASL ?</h1>
+      <img src="{{ url_for('static', filename='Home2.png') }}" alt="" height="500px" width="100%">
+</div>
+<div style="font-size:25px;color: white;">
+<ul>
+  <li>ASL is a complete, natural language used by the deaf and hard-of-hearing community.</li>
+  <br>
+  <li>ASL is a visual-gestural language that relies on hand movements, facial expressions, and body language to convey meaning and communicate thoughts, ideas, and emotions.</li>
+  <br>
+  <li>It plays a crucial role in facilitating interaction and inclusivity for individuals who are deaf or have hearing impairments.</li> 
+  </ul>
+</div>
+<br>
+<br>
+<br>
+<br>
+<div class="about" id="about">
+    <h1>About Our Tool</h1>
+    <p>
+      Welcome to our innovative project aimed at revolutionizing the way American Sign Language (ASL) is taught and learned. Our team has developed an interactive website that leverages cutting-edge technologies such as computer vision and deep learning, all built on the Flask framework, to provide a comprehensive and engaging learning experience 
+      for ASL enthusiasts. 
+    </p>
+    <p>At its core, our project combines the power of computer vision and deep learning algorithms to accurately interpret and recognize ASL gestures in real-time. By harnessing the capabilities of these advanced technologies, we aim to bridge the communication gap between the hearing and deaf communities 
+      by providing a user-friendly platform for learning and practicing ASL online.</p>
+</div>
+    <div class="container" id="container">
+      <h1 style="color: white; font-size:60px;">Services</h1>
+      <!-- Button 1 -->
+      <div class="button">
+        <!-- Link to button1.html -->
+        <a href="/playground">
+          <!-- Image for Button 1 -->
+          <img src="{{ url_for('static', filename='6.png') }}" alt="Button 1">
+        </a>
+      </div>
+      
+      <!-- Button 2 -->
+      <div class="button">
+        <!-- Link to button2.html -->
+        <a href="button2.html">
+          <!-- Image for Button 2 -->
+          <img src="{{ url_for('static', filename='3.png') }}" alt="Button 2">
+        </a>
+      </div>
+      
+      <!-- Button 3 -->
+      <div class="button">
+        <!-- Link to button3.html -->
+        <a href="button3.html">
+          <!-- Image for Button 3 -->
+          <img src="{{ url_for('static', filename='5.png') }}" alt="Button 3">
+        </a>
+      </div>
+    </div>
+    </body>
+ </html>
